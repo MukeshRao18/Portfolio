@@ -58,11 +58,11 @@ const Navbar = () => {
         {contact.email ? (
           <li className="nav__list-item">
             <Link
-              to="/#contact"
+              to="/contact"
               onClick={toggleNavList}
               className="link link--nav"
             >
-              CONTACT ME
+              ABOUT ME
             </Link>
           </li>
         ) : null}

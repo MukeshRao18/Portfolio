@@ -29,6 +29,23 @@ const header = {
   }
   
   const projects = [
+   
+    {
+      name: 'TUBESUMM - YouTube Transcript Summarizer',
+      description:
+        "TUBESUMM, a Chrome extension for YouTube, offers concise video transcript summaries. It uses Node.js, Express.js, YouTube Transcript API, and Hugging Face Summarization API for precise segment summaries.",
+      stack: ['HTML', 'CSS', 'JavaScript','React.js', 'Node.js', 'Express.js'],
+      sourceCode: 'https://github.com/MukeshRao18/TubeSumm-Extension', 
+      livePreview: 'https://github.com/MukeshRao18/TubeSumm-Extension', 
+    },
+    {
+      name: 'WorksHub - Workshop Registration Platform',
+      description:
+        'Workshub simplifies workshop registration for college students via seamless Paytm integration. Admin can easily add workshops, while students benefit from streamlined enrollment and payment processes.',
+      stack: ['Node.js', 'Express.js', 'Firebase', 'React.js', 'Paytm'],
+      sourceCode: 'https://github.com/your-github-repo', 
+      livePreview: 'https://workshub.example.com',
+    },
     {
       name: 'Blood Bond Society',
       description:
@@ -45,6 +62,7 @@ const header = {
       sourceCode: 'https://github.com/MukeshRao18/Chat-Appllication-Using-React.js',
       livePreview: 'https://github.com',
     },
+    
     
   ]
   

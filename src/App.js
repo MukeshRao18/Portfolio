@@ -7,6 +7,7 @@ import Header from './component/Header/Header.js';
 import Home from './component/Home/Home.js';
 import Certificate from './component/Certificates/Certificate.js';
 import ScrollToTop from './component/ScrollToTop/ScrollToTop.js';
+import Contact from './component/Contact/Contact.js';
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext);
@@ -19,6 +20,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/certificates" element={<Certificate />} />
+            <Route path="/contact" element={<Contact/>}/>
           </Routes>
         </main>
         <ScrollToTop />

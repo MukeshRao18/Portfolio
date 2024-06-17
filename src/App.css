@@ -7,6 +7,7 @@
 
 .light {
   --clr-bg: #fcfcfc;
+  --clr-pc:#9698a0;
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
@@ -15,13 +16,14 @@
 }
 
 .dark {
+  --clr-pc:#4f5985cc;
   --clr-bg: #23283e;
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
   --clr-primary: #90a0d9;
-  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --shadow: rgba(95, 77, 135, 0.16) 0px 30px 50px 0px,
+    rgba(94, 84, 160, 0.06) 0px 0px 0px 2px;
 }
 
 main {
@@ -37,6 +39,7 @@ main {
 .section__title {
   text-align: center;
   margin-bottom: 1em;
+  padding-bottom: 1em;
   text-transform: uppercase;
 }
 
@@ -132,7 +135,6 @@ main {
 
 .btn--plain:hover {
   transform: scale(1.05);
-  
   box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 6px 0px;
 }
 
