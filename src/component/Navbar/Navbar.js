@@ -1,10 +1,12 @@
+// Navbar.js
 import { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Brightness2Icon from '@mui/icons-material/Brightness2';
 import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { ThemeContext } from '../../context/them';
-import { projects, skills, contact ,certificates} from '../../portfolio';
+import { projects, skills, contact } from '../../portfolio';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -14,74 +16,72 @@ const Navbar = () => {
   const toggleNavList = () => setShowNavList(!showNavList);
 
   return (
-    <nav className='center nav'>
+    <nav className="center nav">
       <ul
         style={{ display: showNavList ? 'flex' : null }}
-        className='nav__list'
+        className="nav__list"
       >
         {projects.length ? (
-          <li className='nav__list-item'>
-            <a
-              href='#projects'
+          <li className="nav__list-item">
+            <Link
+              to="/#projects"
               onClick={toggleNavList}
-              className='link link--nav'
+              className="link link--nav"
             >
               PROJECTS
-            </a>
+            </Link>
           </li>
         ) : null}
 
         {skills.length ? (
-          <li className='nav__list-item'>
-            <a
-              href='#skills'
+          <li className="nav__list-item">
+            <Link
+              to="/#skills"
               onClick={toggleNavList}
-              className='link link--nav'
+              className="link link--nav"
             >
               SKILLS
-            </a>
-          </li>
-        ) : null}
-        
-        {certificates.length ? (
-          <li className='nav__list-item'>
-            <a
-              href='#certificates'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              CERTIFICATES
-            </a>
+            </Link>
           </li>
         ) : null}
 
+        <li className="nav__list-item">
+          <Link
+            to="/certificates"
+            onClick={toggleNavList}
+            className="link link--nav"
+          >
+            CERTIFICATES
+          </Link>
+        </li>
+
         {contact.email ? (
-          <li className='nav__list-item'>
-            <a
-              href='#contact'
+          <li className="nav__list-item">
+            <Link
+              to="/#contact"
               onClick={toggleNavList}
-              className='link link--nav'
+              className="link link--nav"
             >
               CONTACT ME
-            </a>
+            </Link>
           </li>
         ) : null}
       </ul>
 
       <button
-        type='button'
+        type="button"
         onClick={toggleTheme}
-        className='btn btn--icon nav__theme'
-        aria-label='toggle theme'
+        className="btn btn--icon nav__theme"
+        aria-label="toggle theme"
       >
         {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
       </button>
 
       <button
-        type='button'
+        type="button"
         onClick={toggleNavList}
-        className='btn btn--icon nav__hamburger'
-        aria-label='toggle navigation'
+        className="btn btn--icon nav__hamburger"
+        aria-label="toggle navigation"
       >
         {showNavList ? <CloseIcon /> : <MenuIcon />}
       </button>
