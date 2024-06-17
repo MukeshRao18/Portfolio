@@ -131,8 +131,8 @@ main {
 }
 
 .btn--plain:hover {
-  transform: translateY(-4px);
-  border: 2px solid var(--clr-primary);
+  transform: scale(1.05);
+  
   box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 6px 0px;
 }
 
