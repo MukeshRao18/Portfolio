@@ -29,6 +29,7 @@
     max-width: 100%;
     height: auto;
     transition: box-shadow 0.3s ease-in-out;
+    margin-left: 40px;
   }
 
   .hire{
@@ -64,6 +65,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px; 
+    margin-left: 20px;
   }
   
   .social-media {
@@ -83,6 +85,11 @@
   }
   .description{
     text-align: center;
+    width:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 130px;
   }
   
 

@@ -7,7 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import { Profile } from '../../portfolio';
-
+import { about } from '../../portfolio';
 const Contact = () => {
   const containerVariants = {
     hidden: { opacity: 0, x: -50 },
@@ -26,6 +26,7 @@ const Contact = () => {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
   };
+  const {resume } = about
 
   return (
     <motion.div 
@@ -63,9 +64,11 @@ const Contact = () => {
           </a>
         </motion.div>
         <motion.div className="visit" variants={itemVariants}>
-          <span type='button' className='btn rounded btn--outline'>
-            Resume
-          </span>
+        <a href={resume}>
+            <span type='button' className='btn rounded btn--outline'>
+              Resume
+            </span>
+          </a>
         </motion.div>
       </motion.div>
     </motion.div>

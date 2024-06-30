@@ -28,7 +28,7 @@ const header = {
     role: 'Front End Engineer',
     description:
       "As a Junior Front-End Developer, I have strong skills in HTML, CSS, JavaScript, React, Bootstrap, and more. I love creating interactive websites and I'm focused on becoming an expert in React. I'm excited to work on real projects and want to build solutions that improve user experiences.",
-    resume: 'file:///C:/Users/bmuke/Downloads/Mukesh-Resume2.pdf',
+    resume: 'https://drive.google.com/file/d/1ZDjUnj80qjOLAggGcsWHIdXE2daGUT0Q/view?usp=sharing',
     social: {
       linkedin: 'https://www.linkedin.com/in/mukesh-kumar-b-474714200/',
       github: 'https://github.com/MukeshRao18',
@@ -92,17 +92,17 @@ const header = {
  const certificates=[
   {
     name:'Google AI-ML',
-    link:'file:///C:/Users/bmuke/Downloads/google%20aiml.pdf',
+    link:'https://drive.google.com/file/d/1rb5UUSjTJywyBw4KfgE1l4let0nhWr5H/view?usp=sharing',
     image:`${Google}`,
   },
   {
     name:'AWS Cloud',
-    link:'file:///C:/Users/bmuke/Downloads/AWS%20cloud.pdf',
+    link:'https://drive.google.com/file/d/1RO_p_NLBL90IM6yHEl-GrlDnSQpK3Gp0/view?usp=sharing',
     image:`${AWS}`,
   },
   {
     name:'Network Security',
-    link:'file:///C:/Users/bmuke/Downloads/Fortinet%20certificte.pdf',
+    link:'https://drive.google.com/file/d/18NMgvxko_iRNfFay27uFcHlbfClKt_-V/view?usp=sharing',
     image:`${Fortinet}`,
   },
   {
