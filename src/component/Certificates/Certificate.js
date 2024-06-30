@@ -1,7 +1,8 @@
-import React from 'react'
-import uniqid from 'uniqid'
-import './Certificate.css'
-import { certificates } from '../../portfolio'
+import React from 'react';
+import uniqid from 'uniqid';
+import './Certificate.css';
+import { certificates } from '../../portfolio';
+
 const Certificate = () => {
   return (
     <div className='section certificate' id="certificates">
@@ -11,15 +12,17 @@ const Certificate = () => {
           <div
             className="certificate-item"
             key={uniqid()}
-            onClick={() => window.location.href = certificate.link}
+            onClick={() => window.open(certificate.link, "_blank")}
           >
-             <h3 className="certificate-name">{certificate.name}</h3>
-            <img src={certificate.image} width="100px" height="100px" alt={certificate.name} className="certificate-name" />
+            <img src={certificate.image} alt={certificate.name} width="180" height="180" className="certificate-image" />
+            <div className="content-details">
+              <h3 className="content-title">{certificate.name}</h3>
+            </div>
           </div>
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Certificate
+export default Certificate;

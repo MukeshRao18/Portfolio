@@ -1,5 +1,4 @@
 
-import meta from './assests/s.svg'
 import html from './assests/html.png'
 import css from './assests/css-3.png'
 import js from './assests/js.png'
@@ -10,6 +9,14 @@ import gh from './assests/code.png'
 import sql from './assests/sql.png'
 import redux from './assests/Redux.png'
 import socket from './assests/Socket.io.png'
+import HTML from './assests/HTML and CSS.jpg'
+import Advance from './assests/Advance (2).jpg'
+import JavaScript from './assests/JavaScript.jpg'
+import Basic from './assests/basics (2).jpg'
+import AWS from './assests/AWS.jpg'
+import Fortinet from './assests/Fortinet.jpg'
+import Profile from './assests/portfolioimg.jpg'
+import Google from './assests/google aiml.jpg'
 const header = {
     homepage: 'vjfyfjv',
     title: 'Portfolio.',
@@ -84,22 +91,37 @@ const header = {
   }
  const certificates=[
   {
+    name:'Google AI-ML',
+    link:'file:///C:/Users/bmuke/Downloads/google%20aiml.pdf',
+    image:`${Google}`,
+  },
+  {
+    name:'AWS Cloud',
+    link:'file:///C:/Users/bmuke/Downloads/AWS%20cloud.pdf',
+    image:`${AWS}`,
+  },
+  {
+    name:'Network Security',
+    link:'file:///C:/Users/bmuke/Downloads/Fortinet%20certificte.pdf',
+    image:`${Fortinet}`,
+  },
+  {
     name:'React Basics',
     link:'https://www.coursera.org/account/accomplishments/certificate/L3BRKUXK9734',
-    image:`${meta}`,
+    image:`${Basic}`,
   },{
     name:'Advanced React',
     link:' https://www.coursera.org/account/accomplishments/certificate/8EDSTWXTSKZM',
-    image:`${meta}`,
+    image:`${Advance}`,
   },{
     name:'JavaScript',
     link:' https://www.coursera.org/account/accomplishments/certificate/6SNCTUCD6ZN4',
-    image:`${meta}`,
+    image:`${JavaScript}`,
   },{
     name:'HTML & CSS',
     link:' https://www.coursera.org/account/accomplishments/verify/9YGK8VUNBWUM',
-    image:`${meta}`,
+    image:`${HTML}`,
   },
  ]
   
-  export { header, about, projects, skills, contact,certificates}
+  export { header, about, projects, skills, contact,certificates,Profile}

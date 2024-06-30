@@ -6,6 +6,7 @@
 }
 
 .light {
+  --clr--dot:#1bed1b;
   --clr-bg: #fcfcfc;
   --clr-pc:#9698a0;
   --clr-bg-alt: #fff;
@@ -16,6 +17,7 @@
 }
 
 .dark {
+  --clr--dot:#1bed1b;
   --clr-pc:#4f5985cc;
   --clr-bg: #23283e;
   --clr-bg-alt: #2a2f4c;
