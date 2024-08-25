@@ -18,7 +18,7 @@ import Fortinet from './assests/Fortinet.jpg'
 import Profile from './assests/portfolioimg.jpg'
 import Google from './assests/google aiml.jpg'
 const header = {
-    homepage: 'vjfyfjv',
+    homepage: '/',
     title: 'Portfolio.',
   }
   
